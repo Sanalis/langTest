@@ -1,0 +1,22 @@
+{
+  "name": "langtest",
+  "version": "1.0.0",
+  "description": "Tests for languages switching",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanalis/langTest.git"
+  },
+  "author": "Alena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanalis/langTest/issues"
+  },
+  "homepage": "https://github.com/Sanalis/langTest#readme",
+  "devDependencies": {
+    "cypress": "^9.5.0"
+  }
+}
