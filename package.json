@@ -4,7 +4,8 @@
   "description": "Tests for languages switching",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "debug": "npx cypress open"
   },
   "repository": {
     "type": "git",
