@@ -1,5 +1,9 @@
 
 
+beforeEach(() => {
+    cy.fixture('/aisad-ob-ge').as('ge')
+  })
+
 describe('German language header menu', function () {
 //TODO move to fixture if possible 
      Cypress.on('uncaught:exception', (err, runnable) => {
@@ -8,7 +12,7 @@ describe('German language header menu', function () {
         });
 
     it('Checks if all 4 elements in the header menu are in German', function () {
-        cy.visit('/aisad-ob-ge')
+        cy.visit(`${this.ge}`)
 
         cy.get('#menu-item-1819').should('have.text', 'Haftungsausschluss')
         cy.get('#menu-item-1818').should('have.text', 'Datenschutzbestimmungen')
